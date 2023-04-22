@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=League+Spartan");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --font-family-league_spartan: "League Spartan";
+  --font-size-l: 40px;
+  --abbey: rgba(77,77,77,1);
+}
+
+.leaguespartan {
+  color: var(--abbey);
+  font-family: var(--font-family-league_spartan);
+  font-size: var(--font-size-l);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav {
+  align-items: center;
+  border: 1px solid;
+  border-color: var(--abbey);
+  border-radius: 11px;
+  display: flex;
+  height: 102px;
+  min-width: 1148px;
+  padding: 7px 29px;
+}
+
+.photo {
+  align-self: flex-start;
+  border: 1px solid;
+  border-color: var(--abbey);
+  border-radius: 43.5px;
+  height: 87px;
+  width: 87px;
+}
+
+.link-container {
+  margin-left: 75px;
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+.vector-container {
+  align-self: flex-start;
+  height: 85px;
+  margin-left: 220px;
+  position: relative;
+}
+
+.body-container {
+  margin-top: 150px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 30rem;
+}
+
+.name {
+  min-height: 59px;
+  text-shadow: 0px 4px 4px #00000040;
+}
+
+.description {
+  font-size: 24px;
+  margin-left: 2px;
+}
+
+.spline {
+  align-self: flex-end;
+  border: 1px solid;
+  padding: 150px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
