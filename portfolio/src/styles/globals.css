@@ -5,8 +5,8 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 217, 217, 217, 0.1;
+  --background-end-rgb: 255, 244, 244, 0.1;
   --font-family-league_spartan: "League Spartan";
   --font-size-l: 40px;
   --abbey: rgba(77,77,77,1);
@@ -33,11 +33,12 @@
 
 .photo {
   align-self: flex-start;
-  border: 1px solid;
+  border: 3px solid;
   border-color: var(--abbey);
   border-radius: 43.5px;
   height: 87px;
   width: 87px;
+  overflow: hidden;
 }
 
 .link-container {
@@ -89,7 +90,7 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-      to bottom,
+      to top,
       transparent,
       rgb(var(--background-end-rgb))
     )
