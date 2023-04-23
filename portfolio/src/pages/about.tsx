@@ -1,10 +1,5 @@
 import Skills from "@/components/Skills"
-import {
-    Breadcrumb,
-    BreadcrumbItem,
-    BreadcrumbLink,
-    BreadcrumbSeparator,
-} from '@chakra-ui/react'
+import Breadcrumbs from "@/components/Breadcrumbs"
 
 import photo from "../../public/linkedin_photo.jpg"
 
@@ -46,21 +41,11 @@ export default function About() {
                 Arizona State University from the Barrett Honors College in May of 2023!</p>
             <p className={`description pt-3`}>
                 I've worked summer internships with <b>OSISoft / AVEVA</b> and <b>Vincit</b>
-                <p>developing Software
-                Engineering solutions in AGILE environments.</p>
             </p>
+            <p className="description">developing Software
+                Engineering solutions in AGILE environments.</p>
             <Skills skills={skillsList} />
-            <Breadcrumb pt={10} alignSelf="center" fontSize="xl">
-                <BreadcrumbItem>
-                    <BreadcrumbLink href='/'>Home</BreadcrumbLink>
-                </BreadcrumbItem>
-                <BreadcrumbItem>
-                    <BreadcrumbLink href='/projects'>Projects</BreadcrumbLink>
-                </BreadcrumbItem>
-                <BreadcrumbItem>
-                    <BreadcrumbLink href='/contact'>Contact</BreadcrumbLink>
-                </BreadcrumbItem>
-            </Breadcrumb>
+            <Breadcrumbs one="home" two="projects" three="contact"></Breadcrumbs>
         </main>
     )
 }
