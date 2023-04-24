@@ -75,8 +75,6 @@
 
 .spline {
   align-self: flex-end;
-  border: 1px solid;
-  padding: 150px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -87,7 +85,7 @@
   }
 }
 
-body {
+main {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to top,
