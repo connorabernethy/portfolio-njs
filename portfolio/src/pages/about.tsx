@@ -36,11 +36,11 @@ export default function About() {
             className={`flex min-h-screen flex-col justify-start p-24 leaguespartan`}>
             <h1 className={`pb-5 leaguespartan`}>About</h1>
             <div className="photo">
-                <Image src={photo.src} alt=""></Image>
+                <Image src={photo.src} alt="" width={87} height={102}></Image>
             </div>
             <p className={`pt-10 description`}>I am a Full-stack Software Developer that graduated from
                 Arizona State University from the Barrett Honors College in May of 2023!</p>
-            <p className={`description pt-3`}>I&aposve worked summer internships with <b>OSISoft / AVEVA</b> and <b>Vincit</b>
+            <p className={`description pt-3`}>I&apos;ve worked summer internships with <b>OSISoft / AVEVA</b> and <b>Vincit</b>
             </p>
             <p className="description">developing Software
                 Engineering solutions in AGILE environments.</p>

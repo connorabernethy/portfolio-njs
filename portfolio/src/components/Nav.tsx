@@ -8,7 +8,7 @@ function Nav(props: any) {
     return(
         <div className="nav leaguespartan">
             <div className="photo">
-                <Image src={photo.src} alt=""></Image>
+                <Image src={photo.src} alt="" width={87} height={102}></Image>
             </div>
             <div className="link-container">
                 <Link href="/about">{about}</Link>

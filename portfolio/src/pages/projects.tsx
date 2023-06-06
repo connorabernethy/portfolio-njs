@@ -3,18 +3,22 @@ import { Button, ButtonGroup, Text } from '@chakra-ui/react'
 import { Card, CardHeader, CardBody, CardFooter, Divider, Heading } from '@chakra-ui/react'
 import { Image } from '@chakra-ui/react'
 import { Stack, Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 export default function Projects(props: any) {
+    const router = useRouter()
+
     return (
         <main
             className={`flex min-h-screen flex-col justify-start p-24 leaguespartan`}>
             <h1>Projects</h1>
             <div className={`pt-10`}>
-                <Tabs isFitted variant='enclosed'>
+                <Tabs isFitted variant='soft-rounded' colorScheme='blue'>
                     <TabList>
                         <Tab>Pioneer Sand</Tab>
                         <Tab>Honors Thesis</Tab>
-                        <Tab>Other</Tab>
+                        <Tab>LinkedList Demo</Tab>
                     </TabList>
 
                     <TabPanels>
@@ -37,11 +41,7 @@ export default function Projects(props: any) {
                                 </CardBody>
                                 <Divider />
                                 <CardFooter>
-                                    <ButtonGroup spacing='2'>
-                                        <Button variant='solid' colorScheme='blue'>
-                                            Visit Pioneer Sand Website
-                                        </Button>
-                                    </ButtonGroup>
+                                    <Link href='https://pioneerco.com' className='link'>Pioneer Sand Link</Link>
                                 </CardFooter>
                             </Card>
                         </TabPanel>
@@ -62,11 +62,7 @@ export default function Projects(props: any) {
                                 </CardBody>
                                 <Divider />
                                 <CardFooter>
-                                    <ButtonGroup spacing='2'>
-                                        <Button variant='solid' colorScheme='blue'>
-                                            Honors Thesis Link
-                                        </Button>
-                                    </ButtonGroup>
+                                    <Link href='https://keep.lib.asu.edu/items/185922' className='link'>Honors Thesis Link</Link>
                                 </CardFooter>
                             </Card>
                         </TabPanel>
@@ -74,24 +70,21 @@ export default function Projects(props: any) {
                         <Card maxW='sm' alignSelf='center' margin='auto' pt={5}>
                                 <CardBody>
                                     <Image
-                                        src=''
+                                        src='https://media.geeksforgeeks.org/wp-content/uploads/20220816144425/LLdrawio.png'
                                         alt=''
                                         borderRadius='lg'
                                     />
                                     <Stack mt='6' spacing='3'>
-                                        <Heading size='md'>Other</Heading>
+                                        <Heading size='md'>LinkedList Demo</Heading>
                                         <Text fontSize="xl">
-                                            Will be updated soon.
+                                            An honors project using HTML5, JavaScript and CSS to demonstrate
+                                            LinkedList functions in a web application.
                                         </Text>
                                     </Stack>
                                 </CardBody>
                                 <Divider />
                                 <CardFooter>
-                                    <ButtonGroup spacing='2'>
-                                        <Button variant='solid' colorScheme='blue'>
-                                            Other
-                                        </Button>
-                                    </ButtonGroup>
+                                    <Link href='http://linked-list-honors-contract.s3-website-us-west-1.amazonaws.com/' className='link'>LinkedList Demo Link</Link>
                                 </CardFooter>
                             </Card>
                         </TabPanel>

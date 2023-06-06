@@ -77,6 +77,12 @@
   align-self: flex-end;
 }
 
+.link {
+  font-size: 16px;
+  text-decoration: underline;
+  color:darkslategrey;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -86,11 +92,6 @@
 }
 
 main {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to top,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  /* color: rgb(var(--foreground-rgb)); */
+  background: linear-gradient(360deg, rgba(217, 217, 217, 0.1) 1.56%, rgba(255, 244, 224, 0.1) 35.4%), #FFF4E0;
 }
