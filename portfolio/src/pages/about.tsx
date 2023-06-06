@@ -2,6 +2,7 @@ import Skills from "@/components/Skills"
 import Breadcrumbs from "@/components/Breadcrumbs"
 
 import photo from "../../public/linkedin_photo.jpg"
+import Image from "next/image"
 
 export default function About() {
     const skillsList: any[] =
@@ -35,7 +36,7 @@ export default function About() {
             className={`flex min-h-screen flex-col justify-start p-24 leaguespartan`}>
             <h1 className={`pb-5 leaguespartan`}>About</h1>
             <div className="photo">
-                <img src={photo.src}></img>
+                <Image src={photo.src} alt=""></Image>
             </div>
             <p className={`pt-10 description`}>I am a Full-stack Software Developer that graduated from
                 Arizona State University from the Barrett Honors College in May of 2023!</p>

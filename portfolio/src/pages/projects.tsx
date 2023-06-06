@@ -14,7 +14,7 @@ export default function Projects(props: any) {
                     <TabList>
                         <Tab>Pioneer Sand</Tab>
                         <Tab>Honors Thesis</Tab>
-                        <Tab>Other?</Tab>
+                        <Tab>Other</Tab>
                     </TabList>
 
                     <TabPanels>
@@ -23,7 +23,7 @@ export default function Projects(props: any) {
                                 <CardBody>
                                     <Image
                                         src='https://mms.businesswire.com/media/20200715005612/en/805731/23/Pioneer_logo_highres.jpg'
-                                        alt='Green double couch with wooden legs'
+                                        alt='Pioneer Sand'
                                         borderRadius='lg'
                                     />
                                     <Stack mt='6' spacing='3'>
@@ -46,10 +46,54 @@ export default function Projects(props: any) {
                             </Card>
                         </TabPanel>
                         <TabPanel>
-                            <p>two!</p>
+                        <Card maxW='sm' alignSelf='center' margin='auto' pt={5}>
+                                <CardBody>
+                                    <Image
+                                        src='https://www.twlewis.com/files/cms-philanthropy/asu_barretthonors_horiz_rgb_maroongold_150ppi_(1)_180917id763.png'
+                                        alt='Honors Thesis'
+                                        borderRadius='lg'
+                                    />
+                                    <Stack mt='6' spacing='3'>
+                                        <Heading size='md'>Barrett Honors Thesis</Heading>
+                                        <Text fontSize="xl">
+                                            Senior Honors Thesis at Arizona State University
+                                        </Text>
+                                    </Stack>
+                                </CardBody>
+                                <Divider />
+                                <CardFooter>
+                                    <ButtonGroup spacing='2'>
+                                        <Button variant='solid' colorScheme='blue'>
+                                            Honors Thesis Link
+                                        </Button>
+                                    </ButtonGroup>
+                                </CardFooter>
+                            </Card>
                         </TabPanel>
                         <TabPanel>
-                            <p>three!</p>
+                        <Card maxW='sm' alignSelf='center' margin='auto' pt={5}>
+                                <CardBody>
+                                    <Image
+                                        src=''
+                                        alt=''
+                                        borderRadius='lg'
+                                    />
+                                    <Stack mt='6' spacing='3'>
+                                        <Heading size='md'>Other</Heading>
+                                        <Text fontSize="xl">
+                                            Will be updated soon.
+                                        </Text>
+                                    </Stack>
+                                </CardBody>
+                                <Divider />
+                                <CardFooter>
+                                    <ButtonGroup spacing='2'>
+                                        <Button variant='solid' colorScheme='blue'>
+                                            Other
+                                        </Button>
+                                    </ButtonGroup>
+                                </CardFooter>
+                            </Card>
                         </TabPanel>
                     </TabPanels>
                 </Tabs>
