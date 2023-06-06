@@ -14,7 +14,7 @@ export default function Skills(props: any) {
         <List spacing={3}>
             {skills.map((skill: any) => {
                 return (
-                <ListItem>
+                <ListItem key={skill.name}>
                     <Badge colorScheme="blue" fontSize="md">
                         {skill.name}
                     </Badge>
