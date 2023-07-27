@@ -17,7 +17,7 @@ export default function Home(props: any) {
                   Full-Stack Software Developer & Engineer
                 </h2>
                 <p className="mt-4 max-w-xs leading-normal">
-                  ASU Honors Graduate with a passion for software and fitness.
+                  ASU Honors Graduate with a passion for software and fitness. Site is currently under construction!
                 </p>
                 <Nav></Nav>
                 <Socials></Socials>
