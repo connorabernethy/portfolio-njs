@@ -2,7 +2,7 @@ import { Box, Card, CardHeader, Heading, CardBody, Stack, StackDivider, Text } f
 import React from "react";
 
 function ProjectCard(props: any) {
-    const {title, tech} = props;
+    const {title, info, tech} = props;
     return (
         <Card variant='outline' className="hover:bg-slate-900 hover:shadow-xl transition-all mt-8" bg='transparent'>
             <CardHeader>
@@ -15,6 +15,9 @@ function ProjectCard(props: any) {
                         <Heading size='xs' textTransform='uppercase'>
                             {tech}
                         </Heading>
+                        <em>
+                            {info}
+                        </em>
                         <Text pt='2' fontSize='sm'>
                             {props.children}
                         </Text>

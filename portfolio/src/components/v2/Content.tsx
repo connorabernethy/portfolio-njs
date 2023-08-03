@@ -2,10 +2,11 @@ import React from "react";
 import ExperienceCard from "./ExperienceCard";
 import ProjectCard from "./ProjectCard";
 
-function Content() {
+function Content(props: any) {
+    const {about, experience, projects} = props;
     return (
         <main className="pt-24 lg:w-1/2 lg:py-24">
-            <section className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+            <section className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" ref={about}>
                 <p>I am a <b>Full-stack Software Developer</b> that graduated from
                     Arizona State University from the Barrett Honors College in May of 2023!</p>
                 <p>I&apos;ve worked summer internships with <b>OSISoft / AVEVA</b> and <b>Vincit</b>
@@ -16,7 +17,7 @@ function Content() {
                  <p className="pt-5">In my personal life, I am very interested in fitness and physical activity, as well as gaming! I actively workout and practice 
                  calisthenics in my free time. Some of my favorite all-time games include: Super Mario Sunshine and Counter-Strike!</p>
             </section>
-            <section className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+            <section className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" ref={experience}>
                 <ExperienceCard job="Vincit" position="Full-Stack Software Developer Intern" timespan="June 2022 - September 2022">
                     • Developed responsive and dynamic solutions using TypeScript, React and NextJS. <br></br>
                     • Designed a front-end implementation of a third-party eCommerce platform, focusing on user authentication and enhancing application
@@ -32,9 +33,19 @@ function Content() {
                 • Utilized Microsoft Azure for resource management and gained experience in cloud service architecture. <br></br>
                 </ExperienceCard>
             </section>
-            <section className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
-                <ProjectCard title="Senior Barrett Honors Thesis"/>
-                <ProjectCard title="Pioneer Sand"/>
+            <section className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" ref={projects}>
+                <ProjectCard title="Senior Barrett Honors Thesis" tech="Cumulative Research Thesis" info="Arizona State University • July 2022 - May 2023">
+                • Conducted a year-long research study on readability indices and their impact on technical documentation. <br></br>
+                • Developed a new readability formula tailored to technical documentation, improving upon existing readability indices. <br></br>
+                • Wrote a research paper summarizing the findings and conclusions, submitted to the Barrett Honors database. <br></br>
+                • Successfully defended the thesis, presenting the research, findings, and conclusions. <br></br>
+                </ProjectCard>
+                <ProjectCard title="Pioneer Sand" tech="TypeScript, React, NextJS, Git, AWS" info="Vincit • June 2022 - September 2022">
+                • Developed backend APIs with TypeScript, focusing on testing, validation, and creation. <br></br>
+                • Implemented new features for the website using Next.js, React, and CSS. <br></br>
+                • Participated in weekly Scrum meetings in an Agile environment. <br></br>
+                • Utilized Git for source control and pushed numerous changes to production. <br></br>
+                </ProjectCard>
             </section>
         </main>
     )
