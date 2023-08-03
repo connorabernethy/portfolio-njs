@@ -33,7 +33,7 @@ function Nav(props: any) {
                         </span>
                     </a>
                 </li>
-                <li>
+                {/* <li>
                     <a className="group flex items-center py-5 active cursor-pointer" onClick={clickFunctions[2]}>
                         <span className="nav-indicator mr-4 h-px w-18 bg-slate-600 transition-all group-hover:w-26 group-hover:bg-slate-200 group-focus-visible:w-26 group-focus-visible:bg-slate-200 motion-reduce:transition-none">
                             <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
@@ -41,7 +41,7 @@ function Nav(props: any) {
                             </span>
                         </span>
                     </a>
-                </li>
+                </li> */}
             </ul>
         </div>
     )
