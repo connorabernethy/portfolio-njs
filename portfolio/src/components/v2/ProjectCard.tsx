@@ -4,7 +4,7 @@ import React from "react";
 function ProjectCard(props: any) {
     const {title, info, tech} = props;
     return (
-        <Card variant='outline' className="hover:bg-slate-900 hover:shadow-xl transition-all mt-8" bg='transparent'>
+        <Card variant='' className="hover:bg-slate-900 hover:shadow-xl transition-all mt-8" bg='transparent'>
             <CardHeader>
                 <Heading size='md' className="text-slate-300">{title}</Heading>
             </CardHeader>

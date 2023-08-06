@@ -4,7 +4,7 @@ import React from "react";
 function ExperienceCard(props: any) {
     const {job, position, timespan} = props;
     return (
-        <Card variant='outline' className="hover:bg-slate-900 hover:shadow-xl transition-all mt-8" bg='transparent'>
+        <Card variant='' className="hover:bg-slate-900 hover:shadow-xl transition-all mt-8" bg='transparent'>
             <CardHeader>
                 <Heading size='md' className="text-slate-300">{job}</Heading>
             </CardHeader>

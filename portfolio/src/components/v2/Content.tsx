@@ -46,6 +46,11 @@ function Content(props: any) {
                 • Participated in weekly Scrum meetings in an Agile environment. <br></br>
                 • Utilized Git for source control and pushed numerous changes to production. <br></br>
                 </ProjectCard>
+                <ProjectCard title="LinkedList Visualization" tech="JavaScript, HTML5, CSS" info="Arizona State University • February 2023 - March 2023">
+                • Created a web application to demonstrate the functionality of LinkedLists using CSS animations and JS. <br></br>
+                • Completed this project as an Honors Contract through the Barrett Honors College.<br></br>
+                • Link: <a target="_blank" href="http://linked-list-honors-contract.s3-website-us-west-1.amazonaws.com/" className="underline font-semibold">LinkedList Playground</a><br></br>
+                </ProjectCard>
             </section>
         </main>
     )
