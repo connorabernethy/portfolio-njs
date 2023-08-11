@@ -15,7 +15,7 @@ function Content(props: any) {
                 <p className="pt-5">My most proficient languages at the moment are <b>C#</b>, <b>JavaScript</b>, and <b>Python</b>.
                  I have worked extensively with <b>REST API development</b> and developing Cloud solutions employing Continuous Integration and Development.</p>
                  <p className="pt-5">In my personal life, I am very interested in fitness and physical activity, as well as gaming! I actively workout and practice 
-                 calisthenics in my free time. Some of my favorite all-time games include: Super Mario Sunshine and Counter-Strike!</p>
+                 calisthenics in my free time.</p>
             </section>
             <section className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" ref={experience}>
                 <ExperienceCard job="Vincit" position="Full-Stack Software Developer Intern" timespan="June 2022 - September 2022">
