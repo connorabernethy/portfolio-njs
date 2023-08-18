@@ -1,4 +1,3 @@
-import SplineObject from '@/components/SplineObject'
 import Content from '@/components/v2/Content'
 import Nav from '@/components/v2/Nav'
 import Socials from '@/components/v2/Socials'
@@ -18,6 +17,10 @@ export default function Home(props: any) {
   const handleClickExp = () => {
     experienceRef.current?.scrollIntoView({behavior: 'smooth'});
   };
+  const certificationRef = useRef<null | HTMLDivElement>(null);
+  const handleClickCert = () => {
+    certificationRef.current?.scrollIntoView({behavior: 'smooth'});
+  };
   return (
     <div className="body leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900">
         <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
@@ -33,11 +36,11 @@ export default function Home(props: any) {
                 <p className="mt-4 max-w-xs leading-normal">
                   ASU Honors Graduate with a passion for software and fitness.
                 </p>
-                <Nav clickFunctions={[handleClickAb, handleClickExp, handleClickProj]}></Nav>
+                <Nav clickFunctions={[handleClickAb, handleClickExp, handleClickProj, handleClickCert]}></Nav>
                 <Socials></Socials>
               </div>
             </header>
-            <Content about={aboutRef} projects={projectsRef} experience={experienceRef}/>
+            <Content about={aboutRef} projects={projectsRef} experience={experienceRef} certifications={certificationRef}/>
           </div>
         </div>
     </div>

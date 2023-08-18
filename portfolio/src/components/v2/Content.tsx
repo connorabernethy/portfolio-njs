@@ -1,9 +1,10 @@
 import React from "react";
 import ExperienceCard from "./ExperienceCard";
 import ProjectCard from "./ProjectCard";
+import CertificationCard from "./CertificationCard";
 
 function Content(props: any) {
-    const {about, experience, projects} = props;
+    const {about, experience, projects, certifications} = props;
     return (
         <main className="pt-24 lg:w-1/2 lg:py-24">
             <section className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" ref={about}>
@@ -51,6 +52,16 @@ function Content(props: any) {
                 • Completed this project as an Honors Contract through the Barrett Honors College.<br></br>
                 • Link: <a target="_blank" href="http://linked-list-honors-contract.s3-website-us-west-1.amazonaws.com/" className="underline font-semibold">LinkedList Playground</a><br></br>
                 </ProjectCard>
+                <ProjectCard title="To-Do List Web App" tech="JavaScript, React, CSS" info="Personal • August 2023">
+                • Created a web application with React to practice React hooks and building web applications.<br></br>
+                • Single-page React web app deployed with Vercel.<br></br>
+                • Link: <a target="_blank" href="https://to-do-web-app-mu.vercel.app/" className="underline font-semibold">To-Do List Web App</a><br></br>
+                </ProjectCard>
+            </section>
+            <section className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" ref={certifications}>
+                <CertificationCard title="JavaScript Algorithms & Data Structures Certification" org="freeCodeCamp.org" date="August 2023">
+                    • Link: <a target="_blank" href="https://www.freecodecamp.org/certification/connorabernethy/javascript-algorithms-and-data-structures" className="underline font-semibold">Certificate Link</a>
+                </CertificationCard>
             </section>
         </main>
     )
