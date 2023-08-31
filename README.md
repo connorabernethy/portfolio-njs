@@ -14,6 +14,7 @@ portfolio for my future job search after graduation. This website will constantl
 - About
 - Projects
 - Experience
+- Certifications
 
 More secitons will be added in the future.
 
