@@ -1,6 +1,7 @@
 import Content from '@/components/v2/Content'
 import Nav from '@/components/v2/Nav'
 import Socials from '@/components/v2/Socials'
+import TestCard from '@/components/v2/TestCard';
 
 import { useRef } from 'react'
 
