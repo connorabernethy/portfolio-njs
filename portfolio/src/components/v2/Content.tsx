@@ -47,6 +47,12 @@ function Content(props: any) {
                 • Participated in weekly Scrum meetings in an Agile environment. <br></br>
                 • Utilized Git for source control and pushed numerous changes to production. <br></br>
                 </ProjectCard>
+                <ProjectCard title="Realtime Chat Application" tech="JavaScript, React, CSS, StreamChat" info="Personal • August 2023">
+                • Created a Full-Stack Web Application that allows for realtime communication between users.<br></br>
+                • Includes Channels & Direct Messaging for chatting with file upload and emoji functions.<br></br>
+                • User database powered by StreamChat with REST backend for authentication.<br></br>
+                • Link: <a target="_blank" href="https://github.com/connorabernethy/chat-application/tree/master" className="underline font-semibold">Realtime Chat Application</a><br></br>
+                </ProjectCard>
                 <ProjectCard title="LinkedList Visualization" tech="JavaScript, HTML5, CSS" info="Arizona State University • February 2023 - March 2023">
                 • Created a web application to demonstrate the functionality of LinkedLists using CSS animations and JS. <br></br>
                 • Completed this project as an Honors Contract through the Barrett Honors College.<br></br>
